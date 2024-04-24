@@ -6,13 +6,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY paragraphs.txt .
-
-COPY filtered_text.txt .
-
-COPY script.py .
-
-COPY counter.py .
+COPY . .
 
 RUN python script.py
 
